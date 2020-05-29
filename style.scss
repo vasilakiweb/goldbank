@@ -47,36 +47,58 @@ body {
 }
 
 // ===== Menu =====
-.nav-menu {
-    background-image: linear-gradient(to top, #a21b11, #c24c3b);
-    height: 35px;
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+// .nav-menu {
+//   height: 34px;
+//   background-image: 
+//   linear-gradient(to top, #a21b11, #c24c3b);
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 34px;
+    background-image: 
+    linear-gradient(to top, #a21b11, #c24c3b);
+    border: none;
+    border-radius: 10px;
     &__item {
-       color: #fff; 
-       list-style-type: none;
-       font-family: Helvetica;
-       font-size: 16px;
-       display: flex;
+        cursor: pointer;
+        color: #ececec;
+        padding: 0 20px;
+        font-size: 16px;
+        font-family: "Helvetica", sans-serif;
 
-       &--active{
-        background-color: #000;
-        align-self: stretch;
+        &:first-child{
+            background-color: #000;
+            display: flex;
+            align-self: stretch;
+            align-items: center;
+            font-weight: 600;
+            border-radius: 4px 0 0 4px; 
         }
-        &:not(:last-child){
-            margin-right: 20px;
+        &:last-child {
+            margin-left: auto;
+            background-image: linear-gradient(to top, #1f1f1f, #454545);
+            display: flex;
+            align-self: stretch;
+            align-items: center;
+            font-weight: 600;
+            border-radius: 0 4px 4px 0;
         }
-
-       &:last-child{
-           margin-left: auto;
-
-       }
     }
 }
+
+
+
+
+
+
+
+
+
 // ===== Banner + Login =====
 
 // ===== About =====
