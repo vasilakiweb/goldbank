@@ -121,9 +121,15 @@ body {
   color: #cd716d;
 }
 
+.specialties__list {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
 .specialties__list-item {
   list-style-type: none;
   color: #595959;
+  margin-bottom: 10px;
 }
 
 .specialties__check-icon {
@@ -131,9 +137,51 @@ body {
   color: #cd716d;
 }
 
-.work__title {
-  justify-self: flex-start;
-  text-align: left;
-  float: left;
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work__list-text {
+  display: block;
+  text-align: center;
+  color: #737070;
+}
+
+.work__list-item {
+  list-style-type: none;
+}
+
+.work__list-item--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.work__arrow-image {
+  margin: 0 30px;
+}
+
+.work__image {
+  height: 65px;
+}
+
+.work__block {
+  margin-top: 25px;
+  background-color: #f2f4f4;
+  padding: 30px 20px 30px 40px;
+  border-radius: 5px;
+  border: 1px solid #c6c7c9;
 }
 /*# sourceMappingURL=style.css.map */
