@@ -1,9 +1,65 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 .container {
   width: 960px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a21b11), to(#c24c3b));
+  background-image: linear-gradient(to top, #a21b11, #c24c3b);
+  height: 35px;
+}
+
+.nav-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu__item {
+  color: #fff;
+  list-style-type: none;
+  font-family: Helvetica;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-menu__item--active {
+  background-color: #000;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.nav-menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-menu__item:last-child {
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
