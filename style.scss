@@ -2,13 +2,42 @@
 body {
     margin: 0;
     padding: 0;
+
+    background-color: #e6dfdc;
 }
 
 .container {
     width: 960px;
+    margin: 0 auto;
 }
 
 // ===== Header =====
+.top-line {
+    height: 7px;
+    background-color: #1f1f1f;
+    width: 100%;
+}
+.header {
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+        font-size: 14px;
+        &-item {
+            margin-left: 10px;
+            color: #595959;
+            font-weight: bold;
+            &--red {
+                color: #cd716d;
+            }
+        }
+    }
+}
 
 // ===== Menu =====
 
