@@ -148,3 +148,20 @@ body {
 }
 
 // ===== Footer =====
+.footer {
+    padding: 20px 25px;
+    background-color: #1f1f1f;
+    color: #fff;
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    span:first-child {
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    span {
+        font-size: 16px;
+    }
+}
