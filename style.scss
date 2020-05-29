@@ -96,7 +96,7 @@ body {
     border-radius: 4px;
     padding: 0 40px;
     background-image: 
-    linear-gradient(to top, #a21b11, #c24c3b);
+    linear-gradient(to bottom right, #9a1c12, #d73d2f);
     text-transform: uppercase;
     margin-right: 15px;
 
@@ -172,11 +172,12 @@ body {
 }
 .btn {
     padding: 6px 18px;
-    background-image: linear-gradient(to top, #a21b11, #c24c3b);
+    background-color: #b93124;
     border: none;
     border-radius: 4px;
     color: #ececec;
     font-size: 18px;
+    font-weight: 600;
 }
 // ===== About =====
 .about {
